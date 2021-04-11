@@ -4,7 +4,7 @@ import { MaterialModule } from './arch/libs/material/material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
-import { API_URL } from './arch/api/api.service';
+import { API_URL } from './arch/internals/api/api.service';
 import { environment } from 'src/environments/environment';
 
 @NgModule({
