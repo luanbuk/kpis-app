@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { ArchInternalsModule } from '../arch/internals/arch-internals.module';
 import { HomeComponent } from './home/home.component';
 
 
@@ -8,7 +7,6 @@ import { HomeComponent } from './home/home.component';
     HomeComponent
   ],
   imports: [
-    ArchInternalsModule
   ]
 })
 export class LayoutsModule { }

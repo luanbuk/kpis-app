@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MaterialModule } from './arch/libs/material/material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LayoutComponent } from './arch/internals/components/layout/layout.component';
-import { API_URL } from './arch/internals/api/api.service';
 import { environment } from 'src/environments/environment';
+import { ThirdPartyModule } from './shared/third-party/third-party.module';
+import { ComponentsModule } from './shared/components/components.module';
+import { API_URL } from './core/api.service';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LayoutComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterialModule
+    ThirdPartyModule,
+    ComponentsModule
   ],
   providers: [
     { provide: API_URL, useValue: environment.api }
