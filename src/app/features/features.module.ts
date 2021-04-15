@@ -1,4 +1,6 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { ComponentsModule } from '../shared/components/components.module';
 import { HomeComponent } from './home/home.component';
 
 
@@ -7,6 +9,7 @@ import { HomeComponent } from './home/home.component';
     HomeComponent
   ],
   imports: [
+    CommonModule, ComponentsModule
   ]
 })
-export class LayoutsModule { }
+export class FeaturesModule { }
