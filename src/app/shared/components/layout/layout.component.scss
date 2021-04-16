@@ -1,3 +1,9 @@
-.header-label{
-  padding-left: 2em;
+:host{
+  .header{
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .header-icon{
+    padding-left: 0.5em;
+  }
 }
