@@ -1,1 +1,23 @@
-<p>goal-status works!</p>
+<mat-card>
+    <mat-card-header>
+        <label>Goal Status:</label>
+
+        <mat-form-field >
+            <mat-label>Select a goal...</mat-label>
+            <input type="text"
+                   placeholder="Select a goal..."
+                   aria-label="Number"
+                   matInput
+                   [formControl]="selectedGoal"
+                   [matAutocomplete]="goalsAutocomplete">
+            <mat-autocomplete #goalsAutocomplete="matAutocomplete" [displayWith]="displayGoal">
+              <mat-option *ngFor="let goal of filteredGoals | async" [value]="goal">
+                {{goal.name}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+    </mat-card-header>
+    <mat-card-content>
+        <app-goal-status-chart></app-goal-status-chart>
+    </mat-card-content>
+</mat-card>

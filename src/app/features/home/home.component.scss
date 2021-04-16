@@ -5,8 +5,12 @@
         margin: 0;
         display: flex;
 
-        #goalsSummary {
-            max-width: calc(50vw - 5px);
+        .goals-summary {
+            width: 50vw;
+        }
+
+        .goal-status{
+            width: 47vw;
         }
     }
 }
